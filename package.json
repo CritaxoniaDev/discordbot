@@ -1,0 +1,21 @@
+{
+  "name": "athena-guard-bot",
+  "version": "1.0.0",
+  "description": "Dynamic Discord voice channel guard bot with profanity filter",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "discord.js": "^14.14.1",
+    "@discordjs/voice": "^0.16.1",
+    "dotenv": "^16.3.1"
+  },
+  "engines": {
+    "node": "18.x"
+  },
+  "keywords": ["discord", "bot", "voice", "guard"],
+  "author": "Your Name",
+  "license": "MIT"
+}

@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: athena-guard-bot
+    env: node
+    region: oregon
+    plan: free
+    buildCommand: npm install
+    startCommand: node index.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DISCORD_TOKEN
+        sync: false
+      - key: GUARD_CHANNEL_ID
+        sync: false
+    autoDeploy: true
