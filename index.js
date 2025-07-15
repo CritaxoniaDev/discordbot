@@ -235,7 +235,7 @@ async function handleProfanityViolation(message, foundWords) {
         console.error('❌ Could not delete message:', error);
     }
 
-    let warningMessage = `🚨 **${message.author.username}**, your message contained inappropriate language and has been deleted.\n`;
+    let warningMessage = `wag ka nga magmura **${message.author.username}** halikan ka ni cha jan ee\n`;
     warningMessage += `⚠️ Warning ${userViolation.count}/${PROFANITY_FILTER.settings.warningCount}\n`;
 
     if (userViolation.count >= PROFANITY_FILTER.settings.warningCount) {
